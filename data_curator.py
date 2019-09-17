@@ -25,7 +25,7 @@ with open('playerDB.csv', newline='', encoding='ISO-8859-1') as database:
 
 with open('playerDataSet.csv', 'w', newline='') as datase:
     print('Writing to platerDataSet.csv')
-    writer = csv.writer(datase, quoting=csv.QUOTE_ALL)
+    writer = csv.writer(datase, delimiter=',', quoting=csv.QUOTE_NONE)
     for element in new_list:
         writer.writerow(element)
     
